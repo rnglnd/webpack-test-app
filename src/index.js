@@ -1,7 +1,11 @@
+import './main.css';
 import nav from './nav';
+// const nav = import(/* webpackPrefetch: true */ './nav');
 import main from './main';
-const about = import('./about');
-const contact = import('./contact');
+// const about = import('./about');
+// const contact = import('./contact');
+const about = import(/* webpackChunkName: 'about' */ './about');
+const contact = import(/* webpackChunkName: 'contact' */ './contact');
 
 let content = document.createElement('div');
 content.id ='content';
@@ -20,6 +24,11 @@ if (window.location.hash.includes('contact')) {
     content.appendChild(header.default);
   });
 }
+
+// nav.then(n => {
+//   document.body.appendChild(n.default);
+//   document.body.appendChild(content);
+// });
 
 document.body.appendChild(nav);
 document.body.appendChild(content);
