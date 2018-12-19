@@ -25,6 +25,7 @@ module.exports = {
       filename: '[name].css'
     })
   ],
+  devtool: 'source-map',
   devServer: {
     port: 3000
   }
