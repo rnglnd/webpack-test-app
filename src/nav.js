@@ -1,4 +1,4 @@
-import './nav.css';
+import 'nav.css';
 
 let nav = document.createElement('nav');
 nav.id ='nav';

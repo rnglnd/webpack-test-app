@@ -5,4 +5,9 @@ body {
 #header {
   font-size: 4rem;
   margin-top: 1.5rem;
+  padding-left: .75rem;
+}
+
+.error-heading {
+  color: red;
 }

@@ -1,5 +1,7 @@
 let header = document.createElement('h1');
 header.id ='header';
-header.innerText = 'A lovely landing page'
+if (window.location.hash === '') {
+  header.innerText = 'A lovely landing page';
+}
 
 export default header;

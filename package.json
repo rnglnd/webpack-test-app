@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode production",
     "build": "webpack --mode production",
-    "stats": "webpack --profile --json > stats.json"
+    "stats": "webpack --config webpack.config.stats.js --profile --json > stats.json"
   },
   "author": "",
   "license": "MIT",
